@@ -1,0 +1,19 @@
+{
+	"name": "PWAさんぷる",
+	"showt_name": "PWAさんぷる".
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"start_url": "./index.html",
+	"icons": [
+		{
+			"src": "./assets/img/brown192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./assets/img/brown512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
