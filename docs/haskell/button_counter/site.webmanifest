@@ -1,6 +1,6 @@
 {
-	"name": "PWAさんぷる",
-	"short_name": "PWAさんぷる",
+	"name": "Haskellで作ったカウンター",
+	"short_name": "Haskellで作ったカウンター",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"start_url": "./index.html",
