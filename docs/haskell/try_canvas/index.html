@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<link href="style.css" rel="stylesheet" />
+	  <meta charset="UTF-8">
+	  <link rel="icon" size="48x48" href="/favicon.png">
+	  <link rel="manifest" href="./site.manifest">
+	  <link href="style.css" rel="stylesheet">
+	  <title>Canvas Examples</title>
   </head>
   <body>
 	  <p id="foo"></p>
 	  <canvas id="canvas" width="500" height="500"></canvas>
   </body>
   <script language="javascript" src="tryCanvas.jsexe/all.js" defer></script>
+  <script>
+	  if ('serviceWorker' in navigator) {
+		  window.addEventListener("load", function() {
+			  navigator.serviceWorker.register('./sw.js');
+		  });
+	  }
+  </script>
 </html>
