@@ -1,0 +1,19 @@
+{
+	"name": "Bouncing Balls",
+	"short_name": "Bouncing Balls",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"start_url": "./index.html",
+	"icons": [
+		{
+			"src": "./assets/img/blueFish192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./assets/img/blueFish512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
