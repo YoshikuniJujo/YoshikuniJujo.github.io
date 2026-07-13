@@ -3,6 +3,6 @@ export default function logging(foo) {
 	console.log(foo);
 }
 
-global.GlobalLog = function(foo) {
+window.GlobalLog = function(foo) {
 	console.log(foo);
 }
