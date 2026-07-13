@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
 import FooBar from './some_module.js';
-FooBar();
+FooBar('before Haskell');
 
 import './hello-import.jsexe/all2.js';
