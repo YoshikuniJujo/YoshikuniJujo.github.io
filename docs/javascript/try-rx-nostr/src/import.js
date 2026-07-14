@@ -1,5 +1,5 @@
-import { createRxNostr, createRxForwardReq } from "rx-nostr";
-import { verifier } from "@rx-nostr/crypto";
+import { createRxNostr, createRxForwardReq } from "https://unpkg.com";
+import { verifier } from "https://unpkg.com";
 
 globalThis.createRxNostr = createRxNostr;
 globalThis.createRxForwardReq = createRxForwardReq;
