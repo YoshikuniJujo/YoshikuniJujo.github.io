@@ -1,6 +1,7 @@
 const rxNostr = createRxNostr({ verifier });
 rxNostr.setDefaultRelays([
-	"wss:yabu.me"
+	"wss:yabu.me",
+	"wss:relay.damus.io"
 ]);
 
 const rxReq = createRxForwardReq();
