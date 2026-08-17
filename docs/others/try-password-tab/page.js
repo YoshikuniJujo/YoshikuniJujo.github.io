@@ -17,7 +17,7 @@ document.querySelector("#open-input").addEventListener("click", async () => {
 
 document.querySelector("#open-input2").addEventListener("click", async () => {
 
-	result.textContent = "入力待ち...";
+	result2.textContent = "入力待ち...";
 
 	try {
 		const value = await window.test.openInputTab2();
