@@ -1,14 +1,14 @@
 const result = document.getElementById("result");
 
-document.querySelector("#open-input2").addEventListener("click", async () => {
+document.querySelector("#open-input").addEventListener("click", async () => {
 
-	result2.textContent = "入力待ち...";
+	result.textContent = "入力待ち...";
 
 	try {
 		const value = await window.test.openInputTab2();
-		result2.textContent = `結果: ${value}`;
+		result.textContent = `結果: ${value}`;
 	} catch (e) {
-		result2.textContent = `エラー: ${e}`;
+		result.textContent = `エラー: ${e}`;
 	}
 
 });
@@ -18,12 +18,12 @@ async function openInputTabByShortcut(event) {
 	) {
 		event.preventDefault();
 
-		result2.textContent = "入力待ち...";
+		result.textContent = "入力待ち...";
 		try {
 			const value = await window.test.openInputTab2();
-			result2.textContent = `結果: ${value}`;
+			result.textContent = `結果: ${value}`;
 		} catch (e) {
-			result2.textContent = `エラー: ${e}`;
+			result.textContent = `エラー: ${e}`;
 		}
 	}
 }
