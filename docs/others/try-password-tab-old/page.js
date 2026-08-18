@@ -28,3 +28,12 @@ document.querySelector("#open-input2").addEventListener("click", async () => {
 
 });
 
+function openInputTabByShortcut(event) {
+	if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "j"
+	) {
+		event.preventDefault();
+		window.test.openInputTab2();
+	}
+}
+
+document.addEventListener("keydown", openInputTabByShortcut);
