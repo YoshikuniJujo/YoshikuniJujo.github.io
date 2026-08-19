@@ -5,7 +5,7 @@ document.querySelector("#open-input").addEventListener("click", async () => {
 	result.textContent = "入力待ち...";
 
 	try {
-		const value = await window.test.openInputTab();
+		const value = await window.tryPasswordTab.openInputTab();
 		result.textContent = `結果: ${value}`;
 	} catch (e) {
 		result.textContent = `エラー: ${e}`;
@@ -20,7 +20,7 @@ async function openInputTabByShortcut(event) {
 
 		result.textContent = "入力待ち...";
 		try {
-			const value = await window.test.openInputTab();
+			const value = await window.tryPasswordTab.openInputTab();
 			result.textContent = `結果: ${value}`;
 		} catch (e) {
 			result.textContent = `エラー: ${e}`;
