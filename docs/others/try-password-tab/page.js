@@ -1,16 +1,16 @@
 const result = document.getElementById("result");
 
 document.querySelector("#open-input").addEventListener("click", async () => {
-	queryInput(123) });
+	queryInput("123") });
 
-document.addEventListener("keydown", (ev) => openInputTabByShortcut(123, ev));
+document.addEventListener("keydown", (ev) => openInputTabByShortcut("123", ev));
 
 async function
 openInputTabByShortcut(a, event)
 {
 	if (event.ctrlKey && event.shiftKey &&
 		event.key.toLowerCase() === "f") {
-		event.preventDefault(); queryInput(123); }
+		event.preventDefault(); queryInput(a); }
 }
 
 async function
