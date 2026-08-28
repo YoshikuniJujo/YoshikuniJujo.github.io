@@ -19,6 +19,8 @@ document.addEventListener("keydown", openInputTabByShortcut);
 async function
 openInputTabByShortcut(event)
 {
+	const pr = parameter1.value;
+	console.log(pr);
 	if (event.ctrlKey && event.shiftKey &&
 		event.key.toLowerCase() === "f") {
 		event.preventDefault(); queryInput("123"); }
