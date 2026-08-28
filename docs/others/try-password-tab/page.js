@@ -29,3 +29,22 @@ queryInput(a)
 		result1.textContent = `結果: ${value}`;
 	} catch (e) { result1.textContent = `エラー: ${e}`; }
 }
+
+const parameter1 = document.getElementById("parameter1");
+const parameter2 = document.getElementById("parameter2");
+const parameter3 = document.getElementById("parameter3");
+
+parameter1.addEventListener("keydown", (e) => {
+	if (e.key == "Enter")
+		document.getElementById("open-input1").click();
+});
+
+parameter2.addEventListener("keydown", (e) => {
+	if (e.key == "Enter")
+		document.getElementById("open-input2").click();
+});
+
+parameter3.addEventListener("keydown", (e) => {
+	if (e.key == "Enter")
+		document.getElementById("open-input3").click();
+});
