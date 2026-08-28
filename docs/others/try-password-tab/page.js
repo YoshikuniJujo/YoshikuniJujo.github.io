@@ -6,29 +6,30 @@ const parameter2 = document.getElementById("parameter2");
 const parameter3 = document.getElementById("parameter3");
 
 document.querySelector("#open-input1").addEventListener("click", async () => {
-	queryInput("123") });
+	queryInput("123", "parameter1") });
 
 document.querySelector("#open-input2").addEventListener("click", async () => {
-	queryInput("456") });
+	queryInput("456", "parameter2") });
 
 document.querySelector("#open-input3").addEventListener("click", async () => {
-	queryInput("789") });
+	queryInput("789", "parameter3") });
 
 document.addEventListener("keydown", openInputTabByShortcut);
 
 async function
 openInputTabByShortcut(event)
 {
-	const pr = parameter1.value;
-	console.log(pr);
 	if (event.ctrlKey && event.shiftKey &&
 		event.key.toLowerCase() === "f") {
-		event.preventDefault(); queryInput("123"); }
+		event.preventDefault(); queryInput("123", "parameter1"); }
 }
 
 async function
-queryInput(a)
+queryInput(a, pid)
 {
+	const p = document.getElementById(pid);
+	console.log(p.value);
+
 	result1.textContent = "入力待ち...";
 	try {	const value = await window.tryPasswordTab.queryInput(a);
 		resultAnswerId.textContent = `${a}`;
