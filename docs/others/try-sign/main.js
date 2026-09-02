@@ -1,3 +1,6 @@
+console.log("main.js loaded");
+console.log(window.nostr);
+
 const event = {
 	created_at: 1750000000,
 	kind: 1,
