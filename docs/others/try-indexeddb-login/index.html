@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>mySign test</title>
+	</head>
+	<body>
+		<h1>mySign test</h1>
+
+		<h2>Add User</h2>
+
+		<form id="add-user">
+			<label>
+				User ID:
+				<input name="uid" required>
+			</label>
+			<br>
+			<label>
+				Password:
+				<input name="pswd" type="password" required>
+			</label>
+			<br>
+			<button type="submit">Add User</button>
+		</form>
+
+		<h2>Login</h2>
+
+		<form id="login">
+			<label>
+				User ID:
+				<input name="uid" required>
+			</label>
+			<br>
+			<label>
+				Passowrd:
+				<input name="pswd" type="password" required>
+			</label>
+			<br>
+			<button type="submit">Login</button>
+		</form>
+
+		<h2>Status</h2>
+		<p id="status"></p>
+
+		<script src="page.js"></script>
+	</body>
+</html>
